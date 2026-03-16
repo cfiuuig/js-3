@@ -27,3 +27,28 @@ for (let i = 1; i <= num; i++) {
 }
 
 alert("Сумма четных чисел = " + sum);
+
+
+let num;
+let power;
+
+do {
+    num = +prompt("введите число")
+    if (isNaN(num)) {
+        alert("нельзя писать буквы")
+    }
+} while (isNaN(num));
+
+do {
+    power = +prompt("введите степень")
+    if (isNaN(power)) {
+        alert("нельзя писать буквы")
+    }
+} while (isNaN(power));
+
+let result = 1;
+
+for (let i = 1; i <= power; i++) {
+    result *= num;
+}
+alert("ответ: " + result)
