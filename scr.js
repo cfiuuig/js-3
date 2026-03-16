@@ -2,17 +2,17 @@ let num;
 do {
     num = +prompt("введите кол бананов")
     if (isNaN(num)) {
-        alert("введите число!")
+        alert("нельзя писать буквы")
     }
 } while (isNaN(num));
-console.log(num + (num === 1 ? " banana" : " bananas"));
+alert(num + (num === 1 ? " banana" : " bananas"));
 
 
 do {
     num = +prompt("Введите число");
 
     if (isNaN(num)) {
-        alert("Введите число!");
+        alert("нельзя писать буквы")
     }
 
 } while (isNaN(num));
@@ -29,15 +29,15 @@ for (let i = 1; i <= num; i++) {
 alert("Сумма четных чисел = " + sum);
 
 
-let num;
+let num2;
 let power;
 
 do {
-    num = +prompt("введите число")
-    if (isNaN(num)) {
+    num2 = +prompt("введите число")
+    if (isNaN(num2)) {
         alert("нельзя писать буквы")
     }
-} while (isNaN(num));
+} while (isNaN(num2));
 
 do {
     power = +prompt("введите степень")
@@ -49,6 +49,6 @@ do {
 let result = 1;
 
 for (let i = 1; i <= power; i++) {
-    result *= num;
+    result *= num2;
 }
 alert("ответ: " + result)
